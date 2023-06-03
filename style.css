@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f8f4e6;
+    /* margin: 0px; */
+}
+
+li{
+    list-style: none;
+}
+
+.title h1{
+    text-shadow: 0 0 4px #f5f5f5,0 0 8px #f5f5f5;
+    font-size: 75px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.title{
+    height: 40vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2{
+    font-size: 45px;
+    letter-spacing: 0.5px;
+
+    display: inline-block;
+
+    border-bottom: 5px solid crimson;
+}
+
+/* mainvisual */
+
+.mainvisual{
+    height: 100vh;
+    width: 100%;
+
+    background-image: url(https://github.com/roadmanbetween/Codestep-11/assets/120165765/42988e20-f9b1-4338-bf26-57954be93c70);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 10%;
+}
+
+.mainvisual nav{
+    padding: 25px 40px;
+    text-align: end;
+}
+
+.mainvisual nav li{
+    display: inline-block;
+
+    padding-left: 20px;
+
+    text-shadow: 0 0 4px dimgrey,0 0 6px dimgrey;
+    color: white;
+}
+
+.mainvisual nav a:hover{
+    color: crimson;
+}
+
+.mainvisual a{
+    text-decoration: none;
+    color: white;
+
+    transition: 0.3s;
+}
+
+.mainvisual h1{
+    margin-top: 150px;
+
+    text-shadow: 0 0 8px #f5f5f5,0 0 12px #f5f5f5;
+    text-align: center;
+    font-size: 110px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/* menu */
+
+#menu{
+    margin-top: 25px;
+}
+
+#menu .title{
+    background-image: url(https://github.com/roadmanbetween/Codestep-11/assets/120165765/a90e3635-d701-4ab5-8de5-be9e9e94b9b3);
+    background-position: 0px 55%;
+}
+
+#menu .contents{
+    max-width: 1000px;
+    margin: auto;
+    padding: 85px 16px 0px 16px;
+    
+    display: flex;
+}
+
+#menu .contents .left,
+#menu .contents .right{
+    text-align: center;
+
+    width: 50%
+}
+
+#menu .contents .left{
+    padding-right: 40px;
+
+    border-right: 1px solid black;
+}
+
+#menu .contents .right{
+    padding-left: 40px;
+}
+
+#menu .contents dl{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 65px;
+
+    width: 100%;
+}
+
+#menu .contents dt{
+    width: 85%;
+
+    text-align: start;
+
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+#menu .contents dd{
+    width: 15%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#menu .contents .right .other{
+    margin-top: 65px;
+}
+
+/* about */
+
+#about{
+    margin-top: 100px;
+
+    text-align: center;
+}
+
+#about .title{
+    background-image: url(https://github.com/roadmanbetween/Codestep-11/assets/120165765/d433ff26-6901-40f0-8e4e-b7694f3f8b53);
+    background-position: 0px 90%;
+}
+
+#about .contents{
+    max-width: 1000px;
+    margin: 0 auto;
+
+    margin-top: 85px;
+    padding: 16px;
+}
+
+#about .contents ul{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 85px;
+}
+
+#about .contents li{
+    width: 50%;
+    padding: 14px;
+
+    text-align: start;
+}
+
+/* about read more */
+
+#about .button-wrap{
+    margin-top: 75px;
+    display: inline-block;
+    position: relative;
+}
+
+#about span{
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+
+    padding: 14px 45px;
+    display: inline-block;
+
+    cursor: pointer;
+}
+
+#about .button-wrap::before,
+#about .button-wrap::after,
+#about span::before,
+#about span::after{
+    display: block;
+    content: "";
+    background-color: crimson;
+
+    transition: all 0.3s ease;
+}
+
+/* 横の線 */
+
+#about .button-wrap::before,
+#about span::before{
+    height: 2px;
+    width: 32px;
+}
+
+/* 横線がhoverされた時 */
+
+#about .button-wrap:hover::before,
+#about span:hover::before{
+    width: 100%;
+}
+
+/* 縦の線 */
+
+#about .button-wrap::after,
+#about span::after{
+    height: 22px;
+    width: 2px;
+}
+
+/* 縦線がhoverされた時 */
+
+#about .button-wrap:hover::after,
+#about span:hover::after{
+    height: 100%;
+}
+
+/* 左上に合わせる */
+
+#about .button-wrap::before,
+#about .button-wrap::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 右下に合わせる */
+
+#about span::before,
+#about span::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* location */
+
+#location{
+    margin-top: 180px;
+
+    text-align: center;
+}
+
+#location .title{
+    background-image: url(https://github.com/roadmanbetween/Codestep-11/assets/120165765/f33845c5-7d78-43da-9016-f0ea7e380d00);
+    background-position: 0px 60%;
+}
+
+#location .contents{
+    max-width: 1000px;
+    margin: 0 auto;
+
+    margin-top: 85px;
+    padding: 0px 16px;
+}
+
+#location .detail{
+    text-align: start;
+}
+
+#location .middle-ul{
+    margin: 8px 0px;
+}
+
+#location .map iframe{
+    width: 100%;
+    margin: 50px 0px 20px 0px;
+
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* copy-right */
+
+.cr{
+    margin: 75px 0px 15px 0px;
+
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+
+@media screen and (max-width:767px) {
+
+    .title{
+        height: 100px;
+        background-attachment: scroll;
+    }
+    
+    .title h1{
+        font-size: 2.2rem;
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+
+    .contents{
+        margin-top: 60px;
+    }
+
+    /* mainvisual h1 */
+
+    .mainvisual h1{
+        font-size: 20vw;
+        letter-spacing: 3px;
+    }
+    
+    /* menu */
+
+    #menu{
+        margin-top: 14px;
+    }
+
+    #menu .contents{
+        display: block;
+    }
+
+    #menu .contents .left,
+    #menu .contents .right{
+        width: 100%;
+        padding: 0px;
+        border: 0px;
+    }
+
+    #menu .contents dl{
+        margin-top: 30px;
+    }
+
+    #menu .contents .right .food,
+    #menu .contents .right .other{
+        margin-top: 40px;
+    }
+
+    /* about */
+
+    #about .title{
+        background-position: 0px 80%;
+    }
+
+    #about .contents ul{
+        margin-top: 30px;
+
+        display: block;
+    }
+
+    #about .contents li{
+        padding: 0px 0px 20px 0px;
+        width: 100%;
+    }
+
+    /* location */
+
+    #location{
+        margin-top: 100px;
+    }
+
+    #location .contents .detail{
+        font-size: 0.8rem;
+    }
+
+    /* copy-right */
+
+    .cr{
+        font-size: 0.6rem;
+    }
+
+}
