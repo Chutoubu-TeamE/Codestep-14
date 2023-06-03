@@ -135,6 +135,19 @@
     <footer>
         <div class="cr">© COFFEE</div>
     </footer>
+    
+    <script>
+        $(function(){
+            $('a[href^="#"]').click(function(){
+            let href= $(this).attr("href");
+            let target = $(href == "#" || href == "" ? 'html' : href);
+            let position = target.offset().top;
+            $("html, body").animate({scrollTop:position}, 600);
+            return false;
+            });
+        });
+    </script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
